@@ -1,3 +1,4 @@
 # ushipay_portfolioSite
 
-this is my first programing article .please watch and tell me something you think.
+This is my first website I made. 
+Please watch and tell me something you think.

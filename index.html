@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>USHIZAWA'S PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/df34ea2210.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="loading_page">
+        <div class="loader">Loading...</div>
+    </div>
+    <div class="main_page">
+        <header>
+            <nav class="headerNav">
+                <ul class="nav-list">
+                    <li class="nav-child nhome active">HOME</li>
+                    <li class="nav-child nabout">ABOUT ME</li>
+                    <li class="nav-child nworks">WORKS</li>
+                    <li class="nav-child nskill">SKILLS</li>
+                </ul>
+            </nav>
+            <div class="icon-nav">
+                <a href="https://instagram.com/ushi_pay"><i class="icon-child fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/ushipayenjineer"><i class="icon-child fa-brands fa-twitter"></i></a>
+            </div>
+            <p class="site-title-sub">JAPANESE ENJINEER</p>
+            <h1 class="site-title"><span>USHIZAWA'S</span> PORTFOLIO</h1>
+            <div class="arrow-icon"></div>
+        </header>
+        <div class="changeBgColor">
+            <section class="about" data-bgcolor="rgb(217, 217, 217)">
+                <h2 class="heading">ABOUT ME</h2>
+                <div class="profile">
+                    <img class="profile-img" src="img/profileImg.jpg">
+                    <p class="profile-msg">
+                        はじめまして、牛澤哲平です。<br>
+                        出身は東京。大学は法学部で会社法を学んでました。<br>
+                        これからの社会をつくるITの世界に惹かれて、<br>
+                        都内Sierでエンジニアをしています。<br>
+                        <br>
+                        好奇心旺盛な性格なので技術の分野問わず<br>
+                        バックエンド、インフラまで幅広く学習しています。
+                    </p>
+                </div>
+            </section>
+            <section class="works" data-bgcolor="rgb(79, 96, 122)">
+                <h2 class="heading">WORKS</h2>
+                <p class="heading-sub">始めたばかりでポートフォリオ数は少ないですが、これからどんどん更新していきます。
+                </p>
+                <div class="works-wrapper">
+                    <div class="works-box">
+                        <img class="works-img" data-modal='portfolioSite' src="img/screenImage1.png">
+                        <p class="works-title">Portfolio Site</p>
+                    </div>
+                    <div class="works-box">
+                        <img class="works-img" data-modal='blog' src="img/screenImage2.png">
+                        <p class="works-title">Blog</p>
+                    </div>
+                </div>
+            </section>
+            <section class="skill" data-bgcolor="rgb(165, 198, 247)">
+                <h2 class="heading">SKILLS</h2>
+                <p class="heading-sub">知識や強みを紹介します。働き始めたばかりなので現場経験はありません。</p>
+                <div class="skill-wrapper">
+                    <div class="skill-box">
+                        <i class="skill-icon fa-solid fa-laptop-code"></i>
+                        <div class="skill-title">Programming Skill
+                        </div>
+                        <p class="skill-text">
+                            使用できる言語はJava、CSS、HTML、<br>
+                            JavaScriptです。フレームワークはBootStrap、<br>
+                            jQuery、SpringBootが使用できます。<br>
+                            また、ソース管理としてGitを操作できます。<br>
+                            独学で習得した知識が多いですが、先輩方に<br>
+                            に教わりながら技術を磨いています。
+
+                        </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="skill-icon fa-solid fa-server"></i>
+                        <div class="skill-title">Infrastracture Skill
+                        </div>
+                        <p class="skill-text">
+                            新卒研修でネットワークとサーバーの<br>
+                            ひととおりの知識は修得しています。<br>
+                            また、クラウドの知識としてAWSで<br>
+                            簡単な基盤構築をすることができます。<br>
+                            現在は新たな知識として<br>
+                            VMwareを学習しています。
+                        </p>
+                    </div>
+                    <div class="skill-box">
+                        <i class="skill-icon fa-solid fa-user-tie"></i>
+                        <div class="skill-title">Buisiness Skill
+                        </div>
+                        <p class="skill-text">
+                            大学時代に中小企業診断士の一次試験に<br>
+                            全科目合格した経験があるため<br>
+                            ビジネスの基礎知識は身に付いています。<br>
+                            また、東南アジアに語学留学経験もあり<br>
+                            当時はTOEIC700点を保有しています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <p class="footer-msg">Thank you for visiting !!!</p>
+            <p class="copy-right"> ©USHIZAWA'S PORTOFORIO</p>
+        </footer>
+
+        <div class="grey_area"></div>
+        <div class="modal_area portfolio">
+            <div class="modal_content">
+                <i class="close fa-solid fa-xmark" data-close="portfolio"></i>
+
+                <h3 class="modal_title">USHIZAWA'S
+                    PORTFORIO
+                </h3>
+                <p class="modal_text">私が制作した初めてのポートフォリオサイトです。<br>
+                    作成したサイトはAWSを使用して公開しています。<br>
+                    またコードはGitHub上でも公開しています。
+                </p>
+                <h3 class="modal_skill-title">使用した技術
+                </h3>
+                <p class="modal_skill">
+                    HTML、CSS、JavaScript、jQuery、AWS、GitHub
+                </p>
+            </div>
+            <div class="modal_img">
+                <div class="modal_img_list">
+                    <img class="modal_child_img" src="img/screenImage1.png">
+                    <img class="modal_child_img" src="img/screenImage1_2.png">
+                    <img class="modal_child_img" src="img/screenImage1_3.png">
+                    <img class="modal_child_img" src="img/screenImage1_4.png">
+                </div>
+                <img class="modal_main_img" src="img/screenImage1.png">
+            </div>
+        </div>
+        <div class="modal_area blog">
+            <div class="modal_content">
+                <i class="close fa-solid fa-xmark" data-close="blog"></i>
+                <h3 class="modal_title">うしぺいの<br>エンジニア日記
+                </h3>
+                <p class="modal_text">エンジニア生活の中で学習した技術や<br>
+                    コラムなどを投稿しています。<br>
+                    SpringBootなどのネットであまり情報が多くない<br>
+                    技術を紹介しています。<br>
+                    私のブログがエンジニア学習の<br>
+                    助けになれたら嬉しいです。 </p>
+                    
+                <h3 class="modal_skill-title">コンテンツ
+                </h3>
+                <p class="modal_skill">
+                    SpringBoot、ノマドカフェ<br>
+                    ※今後VMware、AWSなどの情報
+                    を追加していく予定です。
+                </p>
+            </div>
+            <div class="modal_img">
+                <div class="modal_img_list">
+                    <img class="modal_child_img" src="img/screenImage2.png">
+                    <img class="modal_child_img" src="img/screenImage2_2.png">
+                    <img class="modal_child_img" src="img/screenImage2_3.png">
+                </div>
+               <a href="https://ushipay-engineer-nikki.com/"><img class="modal_main_img" src="img/screenImage2.png"></a>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

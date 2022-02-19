@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/*モーダル背景部分*/
+.grey_area{
+    background-color: rgb(0, 0, 0);
+    display: none;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+/*モーダル部分*/
+.modal_area{
+    max-height: 80%;
+    width: 90%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    margin: 60px auto;
+    overflow-y: auto;
+    border-radius: 3px;
+    background-color: rgb(250, 248, 248);
+    padding: 40px 50px;
+    color: #000;
+    clip-path: inset(0 50% 0 50%);
+    transition: 0.7s;
+    z-index: 4;
+}
+
+.view4{
+    clip-path: inset(0 0 0 0)!important;
+}
+
+.notMove{
+    overflow-y: hidden;
+}
+
+.close{
+    position: absolute ;
+    font-size: 3rem;
+    top: 15px;
+    right: 18px;
+    padding: 2px 9px;
+    background-color: rgba(207, 205, 205, 0.3);
+    border-radius: 5px;
+}
+
+.close:hover{
+    opacity: 0.6;
+}
+
+.modal_content{
+    float: left;
+    text-align: left;
+}
+
+.modal_title{
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    margin-left:10px ;
+}
+
+.modal_text,.modal_skill{
+    font-size: 1.5rem;
+}
+
+.modal_skill-title{
+    margin-top: 60px;
+    font-size: 2rem;
+}
+
+.modal_img{
+    float: right;
+    text-align: center;
+    width: 60%;
+}
+
+.modal_img_list{
+    display: block;
+    margin-bottom: 20px;  
+}
+
+.modal_child_img{
+    object-fit: cover;
+    height: 75px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 1.5px 1.5px 2px rgb(116, 116, 116) ;
+}
+
+.modal_main_img{
+    width: 100%;
+    height: auto;
+    box-shadow: 12px 12px 30px rgb(116, 116, 116) ;
+}
+
+@media(max-width:1200px){
+    .modal_content{
+        float: none;
+        text-align: center;
+    }
+    .modal_img{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+/*スマホ用*/
+@media(max-width:780px){
+    .modal_area{
+        padding: 40px 10px;
+    }
+    
+    .modal_text,.modal_skill{
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .modal_title{
+        font-size: 2.5rem;
+        letter-spacing: 1.5px;
+        margin-left:none 
+    }
+    .modal_skill-title{
+        margin-top: 0;
+        font-size: 1.5rem;
+
+    }
+    .modal_img_list{
+        margin-bottom: 10px;  
+    }
+    .modal_child_img{
+        object-fit: cover;
+        height: 55px;
+        width: 55px;
+        text-align: center;
+    }
+    .modal_main_img{
+        box-shadow: 7px 7px 20px rgb(116, 116, 116) ;
+    }
+}
